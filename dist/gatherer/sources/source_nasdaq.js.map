@@ -1,1 +1,0 @@
-{"version":3,"file":"source_nasdaq.js","sourceRoot":"","sources":["../../../src/gatherer/sources/source_nasdaq.ts"],"names":[],"mappings":";;AAAA,qCAAkC;AAClC,6CAAyD;AAEzD,kBAA0B,SAAQ,eAAM;IACpC,MAAM;QACF,OAAO,wDAAwD,CAAC;IACpE,CAAC;IAED,kBAAkB,CAAC,KAAoB;QACnC,OAAO,IAAI,mBAAQ,CAAC,EAAE,EAAE,CAAC,EAAE,IAAI,EAAE,IAAI,CAAC,CAAC;IAC3C,CAAC;CACJ;AARD,oCAQC;AAAA,CAAC"}

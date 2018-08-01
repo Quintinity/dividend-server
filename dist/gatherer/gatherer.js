@@ -1,1 +1,0 @@
-//# sourceMappingURL=gatherer.js.map

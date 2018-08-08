@@ -12,7 +12,12 @@ export class SourceNasdaq extends Source {
 
     async findLatestDividend(query: DividendQuery): Promise<Dividend> {
         const formattedUrl = sprintf(this.getUrl(), query);
-        const data: string = (await axios.get(formattedUrl)).data as string;
+        const data: string = (await axios.get(formattedUrl, {
+            headers: {
+                "User-Agent": "Wget/1.14 (mingw32)",
+                "Accept": "*/*"
+            }
+        })).data as string;
 
         const $ = cheerio.load(data);
         const row = $("#table-saw > tbody > tr").first();

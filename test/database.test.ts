@@ -10,7 +10,7 @@ import { fail } from "assert";
 
 describe("test database", () => {
     const db = new DividendDatabase(true);
-    const currentDate = moment().startOf("day");
+    const currentDate = moment().utc().startOf("day");
     const origDividend = new Dividend("msft", 1, currentDate, currentDate, "USD");
 
     it("create", async () => {  
@@ -22,7 +22,8 @@ describe("test database", () => {
     it("insert and select", async () => {
         expect(await db.getLatestDividend(origDividend.symbol)).to.be.null;
         await db.setLatestDividend(origDividend);
-        expect(origDividend.equals(await db.getLatestDividend(origDividend.symbol))).to.be.true;
+        const a = await db.getLatestDividend(origDividend.symbol);
+        expect(origDividend.equals(a)).to.be.true;
     });
 
     it("insert old dividend", async () => {
@@ -42,5 +43,6 @@ describe("test database", () => {
         await db.setLatestDividend(newDividend);
         expect(newDividend.equals(await db.getLatestDividend(newDividend.symbol))).to.be.true;
     });
+
 });
  

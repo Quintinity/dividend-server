@@ -4,17 +4,23 @@
 import express from "express";
 import { spawn } from "child_process";
 import schedule from "node-schedule";
+import path from "path";
 import { getnextdividend_router } from "./app/getnextdividend";
 
 const app: express.Express = express();
 const port: number = parseInt(process.env.PORT) || 8080;
 
 function runDividendGatherer(): void {
-    const gatherer = spawn("node", ["dist/gatherer.js"]);
+    const gatherer = spawn("node", [path.join(process.cwd(), "dist/src/gatherer/gatherer.js")]);
+
     gatherer.stdout.on("data", (data) => {
-        console.log("stdout: " + data);
+        process.stdout.write(data);
     });
 
+    gatherer.stderr.on('data', (data) => {
+        process.stderr.write(data);
+    });
+      
     gatherer.on("close", (exitCode) => {
         console.log("Gatherer finished with exit code " + exitCode);
     });

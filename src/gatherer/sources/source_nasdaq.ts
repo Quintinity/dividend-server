@@ -10,6 +10,10 @@ export class SourceNasdaq extends Source {
         return "https://m.nasdaq.com/symbol/%(symbol)s/dividend-history";
     }
 
+    getCurrency() : string {
+        return "USD";
+    }
+
     async findLatestDividend(query: DividendQuery): Promise<Dividend> {
         const formattedUrl = sprintf(this.getUrl(), query);
         const data: string = (await axios.get(formattedUrl, {
@@ -25,6 +29,6 @@ export class SourceNasdaq extends Source {
         const paymentDate = moment(row.find("td").eq(4).text(), "YYYYMMDD").utc().startOf("day");
         const amount = parseFloat(row.find("td").eq(1).text());
 
-        return new Dividend(query.symbol, amount, exDate, paymentDate);
+        return new Dividend(query.symbol, amount, exDate, paymentDate, this.getCurrency());
     }
 };

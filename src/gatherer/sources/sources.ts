@@ -7,12 +7,13 @@ const sources = new Map<string, Source>();
 sources.set("nasdaq", new SourceNasdaq());
 sources.set("vanguard_canada", new SourceVanguardCanada());
 
-function getSource(query : DividendQuery) : Source {
-    let source : Source = sources.get(query.source);
+function getSource(sourceID : string) : Source {
+    let source : Source = sources.get(sourceID);
     if (source == undefined) {
-        throw new Error(query.source + " is not a valid source");
+        throw new Error(sourceID + " is not a valid source");
     }
     return source;
 }
+
 
 export { getSource };

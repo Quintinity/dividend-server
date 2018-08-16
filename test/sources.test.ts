@@ -7,11 +7,11 @@ import { Constants } from "../src/constants";
 
 describe("test sources", () => {
     it("get sources", () => {
-        expect(getSource({ symbol: "", source: "nasdaq" })).to.be.instanceof(SourceNasdaq);
+        expect(getSource("nasdaq")).to.be.instanceof(SourceNasdaq);
     });
 
     it("get source nonexistent", () => {
-        expect(() => getSource({ symbol: "", source: "abc" })).to.throw();
+        expect(() => getSource("abc")).to.throw();
     });
 
     it("nasdaq", async () => {

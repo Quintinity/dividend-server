@@ -4,12 +4,6 @@
             "symbol":"A"
         },
         {
-            "symbol":"AACAY"
-        },
-        {
-            "symbol":"AAGIY"
-        },
-        {
             "symbol":"AAL"
         },
         {
@@ -28,24 +22,6 @@
             "symbol":"ABC"
         },
         {
-            "symbol":"ABEV"
-        },
-        {
-            "symbol":"ABT"
-        },
-        {
-            "symbol":"ABX"
-        },
-        {
-            "symbol":"ACGBY"
-        },
-        {
-            "symbol":"ACN"
-        },
-        {
-            "symbol":"ADDYY"
-        },
-        {
             "symbol":"ADI"
         },
         {
@@ -53,9 +29,6 @@
         },
         {
             "symbol":"ADP"
-        },
-        {
-            "symbol":"ADRNY"
         },
         {
             "symbol":"ADS"
@@ -73,16 +46,10 @@
             "symbol":"AET"
         },
         {
-            "symbol":"AEXAY"
-        },
-        {
             "symbol":"AFG"
         },
         {
             "symbol":"AFL"
-        },
-        {
-            "symbol":"AGESY"
         },
         {
             "symbol":"AGG"
@@ -91,34 +58,10 @@
             "symbol":"AGN"
         },
         {
-            "symbol":"AGR"
-        },
-        {
-            "symbol":"AHEXY"
-        },
-        {
-            "symbol":"AHKSY"
-        },
-        {
-            "symbol":"AIG"
-        },
-        {
-            "symbol":"AIQUY"
-        },
-        {
             "symbol":"AJG"
         },
         {
-            "symbol":"AJINY"
-        },
-        {
-            "symbol":"AKZOY"
-        },
-        {
             "symbol":"ALB"
-        },
-        {
-            "symbol":"ALFVY"
         },
         {
             "symbol":"ALL"
@@ -127,28 +70,13 @@
             "symbol":"ALLY"
         },
         {
-            "symbol":"ALNPY"
-        },
-        {
-            "symbol":"ALPMY"
-        },
-        {
-            "symbol":"AMADY"
-        },
-        {
             "symbol":"AMAT"
-        },
-        {
-            "symbol":"AMCRY"
         },
         {
             "symbol":"AME"
         },
         {
             "symbol":"AMGN"
-        },
-        {
-            "symbol":"AMKBY"
         },
         {
             "symbol":"AMP"
@@ -167,9 +95,6 @@
         },
         {
             "symbol":"ANTM"
-        },
-        {
-            "symbol":"ANZBY"
         },
         {
             "symbol":"AON"
@@ -199,28 +124,7 @@
             "symbol":"ARNC"
         },
         {
-            "symbol":"ASAZY"
-        },
-        {
-            "symbol":"ASBFY"
-        },
-        {
-            "symbol":"ASEKY"
-        },
-        {
-            "symbol":"ASHTY"
-        },
-        {
             "symbol":"ASML"
-        },
-        {
-            "symbol":"ASX"
-        },
-        {
-            "symbol":"ATASY"
-        },
-        {
-            "symbol":"ATLKY"
         },
         {
             "symbol":"ATO"
@@ -235,16 +139,7 @@
             "symbol":"AVGO"
         },
         {
-            "symbol":"AVIFY"
-        },
-        {
-            "symbol":"AVVIY"
-        },
-        {
             "symbol":"AWK"
-        },
-        {
-            "symbol":"AXAHY"
         },
         {
             "symbol":"AXP"
@@ -253,19 +148,10 @@
             "symbol":"AZN"
         },
         {
-            "symbol":"AZSEY"
-        },
-        {
             "symbol":"BA"
         },
         {
             "symbol":"BAC"
-        },
-        {
-            "symbol":"BACHY"
-        },
-        {
-            "symbol":"BAESY"
         },
         {
             "symbol":"BAK"
@@ -277,13 +163,7 @@
             "symbol":"BAP"
         },
         {
-            "symbol":"BASFY"
-        },
-        {
             "symbol":"BAX"
-        },
-        {
-            "symbol":"BAYRY"
         },
         {
             "symbol":"BBD"
@@ -293,9 +173,6 @@
         },
         {
             "symbol":"BBL"
-        },
-        {
-            "symbol":"BBSEY"
         },
         {
             "symbol":"BBT"
@@ -313,13 +190,7 @@
             "symbol":"BCH"
         },
         {
-            "symbol":"BCMXY"
-        },
-        {
             "symbol":"BCS"
-        },
-        {
-            "symbol":"BDORY"
         },
         {
             "symbol":"BDX"
@@ -337,9 +208,6 @@
             "symbol":"BHGE"
         },
         {
-            "symbol":"BHKLY"
-        },
-        {
             "symbol":"BHP"
         },
         {
@@ -347,9 +215,6 @@
         },
         {
             "symbol":"BK"
-        },
-        {
-            "symbol":"BKEAY"
         },
         {
             "symbol":"BLK"
@@ -364,22 +229,13 @@
             "symbol":"BMY"
         },
         {
-            "symbol":"BNPQY"
-        },
-        {
             "symbol":"BNS"
-        },
-        {
-            "symbol":"BOUYF"
         },
         {
             "symbol":"BP"
         },
         {
             "symbol":"BR"
-        },
-        {
-            "symbol":"BRDCY"
         },
         {
             "symbol":"BSAC"
@@ -397,28 +253,16 @@
             "symbol":"BUD"
         },
         {
-            "symbol":"BURBY"
-        },
-        {
             "symbol":"BX"
         },
         {
-            "symbol":"BXBLY"
-        },
-        {
             "symbol":"BXP"
-        },
-        {
-            "symbol":"BZLFY"
         },
         {
             "symbol":"C"
         },
         {
             "symbol":"CA"
-        },
-        {
-            "symbol":"CABGY"
         },
         {
             "symbol":"CAG"
@@ -466,12 +310,6 @@
             "symbol":"CFG"
         },
         {
-            "symbol":"CFRUY"
-        },
-        {
-            "symbol":"CGEMY"
-        },
-        {
             "symbol":"CHA"
         },
         {
@@ -490,43 +328,13 @@
             "symbol":"CI"
         },
         {
-            "symbol":"CIADY"
-        },
-        {
             "symbol":"CIB"
-        },
-        {
-            "symbol":"CICHY"
-        },
-        {
-            "symbol":"CIHKY"
         },
         {
             "symbol":"CINF"
         },
         {
-            "symbol":"CIOXY"
-        },
-        {
-            "symbol":"CJEWY"
-        },
-        {
-            "symbol":"CJPRY"
-        },
-        {
-            "symbol":"CKHUY"
-        },
-        {
             "symbol":"CL"
-        },
-        {
-            "symbol":"CLLDY"
-        },
-        {
-            "symbol":"CLPBY"
-        },
-        {
-            "symbol":"CLPHY"
         },
         {
             "symbol":"CLX"
@@ -545,9 +353,6 @@
         },
         {
             "symbol":"CMI"
-        },
-        {
-            "symbol":"CMPGY"
         },
         {
             "symbol":"CMS"
@@ -592,22 +397,10 @@
             "symbol":"CPB"
         },
         {
-            "symbol":"CPYYY"
-        },
-        {
             "symbol":"CQP"
         },
         {
-            "symbol":"CRARY"
-        },
-        {
             "symbol":"CRH"
-        },
-        {
-            "symbol":"CRHKY"
-        },
-        {
-            "symbol":"CRRFY"
         },
         {
             "symbol":"CS"
@@ -619,12 +412,6 @@
             "symbol":"CSJ"
         },
         {
-            "symbol":"CSLLY"
-        },
-        {
-            "symbol":"CSUAY"
-        },
-        {
             "symbol":"CSX"
         },
         {
@@ -634,16 +421,7 @@
             "symbol":"CTL"
         },
         {
-            "symbol":"CTPCY"
-        },
-        {
-            "symbol":"CTRYY"
-        },
-        {
             "symbol":"CTSH"
-        },
-        {
-            "symbol":"CTTAY"
         },
         {
             "symbol":"CUK"
@@ -664,28 +442,10 @@
             "symbol":"DAL"
         },
         {
-            "symbol":"DANOY"
-        },
-        {
-            "symbol":"DASTY"
-        },
-        {
-            "symbol":"DBOEY"
-        },
-        {
-            "symbol":"DBSDY"
-        },
-        {
-            "symbol":"DCMYY"
-        },
-        {
             "symbol":"DE"
         },
         {
             "symbol":"DEO"
-        },
-        {
-            "symbol":"DFIHY"
         },
         {
             "symbol":"DFS"
@@ -706,34 +466,13 @@
             "symbol":"DIA"
         },
         {
-            "symbol":"DIFTY"
-        },
-        {
             "symbol":"DIS"
-        },
-        {
-            "symbol":"DKILY"
-        },
-        {
-            "symbol":"DLAKY"
         },
         {
             "symbol":"DLR"
         },
         {
-            "symbol":"DNHBY"
-        },
-        {
-            "symbol":"DNKEY"
-        },
-        {
-            "symbol":"DNZOY"
-        },
-        {
             "symbol":"DOV"
-        },
-        {
-            "symbol":"DPSGY"
         },
         {
             "symbol":"DPZ"
@@ -745,22 +484,10 @@
             "symbol":"DRI"
         },
         {
-            "symbol":"DSDVY"
-        },
-        {
-            "symbol":"DSEEY"
-        },
-        {
             "symbol":"DTE"
         },
         {
-            "symbol":"DTEGY"
-        },
-        {
             "symbol":"DUK"
-        },
-        {
-            "symbol":"DVDCY"
         },
         {
             "symbol":"DVN"
@@ -778,28 +505,16 @@
             "symbol":"E"
         },
         {
-            "symbol":"EADSY"
-        },
-        {
-            "symbol":"EBKDY"
-        },
-        {
             "symbol":"EC"
         },
         {
             "symbol":"ECA"
         },
         {
-            "symbol":"ECIFY"
-        },
-        {
             "symbol":"ECL"
         },
         {
             "symbol":"ED"
-        },
-        {
-            "symbol":"EDPFY"
         },
         {
             "symbol":"EEM"
@@ -817,9 +532,6 @@
             "symbol":"EL"
         },
         {
-            "symbol":"ELUXY"
-        },
-        {
             "symbol":"EMB"
         },
         {
@@ -832,16 +544,7 @@
             "symbol":"ENB"
         },
         {
-            "symbol":"ENGIY"
-        },
-        {
-            "symbol":"ENLAY"
-        },
-        {
             "symbol":"EOG"
-        },
-        {
-            "symbol":"EONGY"
         },
         {
             "symbol":"EPD"
@@ -859,16 +562,7 @@
             "symbol":"EQT"
         },
         {
-            "symbol":"ERIC"
-        },
-        {
             "symbol":"ES"
-        },
-        {
-            "symbol":"ESALY"
-        },
-        {
-            "symbol":"ESLOY"
         },
         {
             "symbol":"ESS"
@@ -898,9 +592,6 @@
             "symbol":"EXPE"
         },
         {
-            "symbol":"EXPGY"
-        },
-        {
             "symbol":"EXR"
         },
         {
@@ -911,9 +602,6 @@
         },
         {
             "symbol":"FANG"
-        },
-        {
-            "symbol":"FANUY"
         },
         {
             "symbol":"FAST"
@@ -931,16 +619,10 @@
             "symbol":"FE"
         },
         {
-            "symbol":"FERGY"
-        },
-        {
             "symbol":"FIS"
         },
         {
             "symbol":"FITB"
-        },
-        {
-            "symbol":"FJTSY"
         },
         {
             "symbol":"FMC"
@@ -964,22 +646,7 @@
             "symbol":"FOXA"
         },
         {
-            "symbol":"FQVLF"
-        },
-        {
             "symbol":"FRC"
-        },
-        {
-            "symbol":"FRFHF"
-        },
-        {
-            "symbol":"FSNUY"
-        },
-        {
-            "symbol":"FSUGY"
-        },
-        {
-            "symbol":"FTI"
         },
         {
             "symbol":"FTS"
@@ -988,22 +655,10 @@
             "symbol":"FTV"
         },
         {
-            "symbol":"FUJHY"
-        },
-        {
-            "symbol":"FUJIY"
-        },
-        {
-            "symbol":"GBOOY"
-        },
-        {
             "symbol":"GD"
         },
         {
             "symbol":"GE"
-        },
-        {
-            "symbol":"GELYY"
         },
         {
             "symbol":"GG"
@@ -1018,12 +673,6 @@
             "symbol":"GIS"
         },
         {
-            "symbol":"GLNCY"
-        },
-        {
-            "symbol":"GLPEY"
-        },
-        {
             "symbol":"GLW"
         },
         {
@@ -1031,9 +680,6 @@
         },
         {
             "symbol":"GPC"
-        },
-        {
-            "symbol":"GPFOY"
         },
         {
             "symbol":"GPN"
@@ -1057,9 +703,6 @@
             "symbol":"GWW"
         },
         {
-            "symbol":"GZPFY"
-        },
-        {
             "symbol":"HAL"
         },
         {
@@ -1072,9 +715,6 @@
             "symbol":"HCA"
         },
         {
-            "symbol":"HCMLY"
-        },
-        {
             "symbol":"HCP"
         },
         {
@@ -1084,19 +724,7 @@
             "symbol":"HDB"
         },
         {
-            "symbol":"HDELY"
-        },
-        {
-            "symbol":"HEGIY"
-        },
-        {
             "symbol":"HEI"
-        },
-        {
-            "symbol":"HEINY"
-        },
-        {
-            "symbol":"HENKY"
         },
         {
             "symbol":"HES"
@@ -1105,40 +733,19 @@
             "symbol":"HFC"
         },
         {
-            "symbol":"HGKGY"
-        },
-        {
             "symbol":"HIG"
         },
         {
             "symbol":"HII"
         },
         {
-            "symbol":"HLDCY"
-        },
-        {
             "symbol":"HLT"
-        },
-        {
-            "symbol":"HLUYY"
         },
         {
             "symbol":"HMC"
         },
         {
-            "symbol":"HNGKY"
-        },
-        {
-            "symbol":"HNNMY"
-        },
-        {
             "symbol":"HNP"
-        },
-        {
-            "symbol":"HOCPY"
-        },
-        {
-            "symbol":"HOKCY"
         },
         {
             "symbol":"HON"
@@ -1150,9 +757,6 @@
             "symbol":"HPQ"
         },
         {
-            "symbol":"HRGLY"
-        },
-        {
             "symbol":"HRL"
         },
         {
@@ -1162,28 +766,16 @@
             "symbol":"HSBC"
         },
         {
-            "symbol":"HSNGY"
-        },
-        {
             "symbol":"HST"
         },
         {
             "symbol":"HSY"
         },
         {
-            "symbol":"HTHIY"
-        },
-        {
             "symbol":"HUM"
         },
         {
-            "symbol":"HVRRY"
-        },
-        {
             "symbol":"HYG"
-        },
-        {
-            "symbol":"IBDRY"
         },
         {
             "symbol":"IBKR"
@@ -1195,12 +787,6 @@
             "symbol":"ICE"
         },
         {
-            "symbol":"IDCBY"
-        },
-        {
-            "symbol":"IDEXY"
-        },
-        {
             "symbol":"IEP"
         },
         {
@@ -1210,9 +796,6 @@
             "symbol":"IFF"
         },
         {
-            "symbol":"IFNNY"
-        },
-        {
             "symbol":"IHG"
         },
         {
@@ -1220,15 +803,6 @@
         },
         {
             "symbol":"IJR"
-        },
-        {
-            "symbol":"IKTSY"
-        },
-        {
-            "symbol":"IMBBY"
-        },
-        {
-            "symbol":"IMO"
         },
         {
             "symbol":"INFY"
@@ -1249,22 +823,7 @@
             "symbol":"IP"
         },
         {
-            "symbol":"IPSEY"
-        },
-        {
-            "symbol":"IPXHY"
-        },
-        {
             "symbol":"IR"
-        },
-        {
-            "symbol":"ISNPY"
-        },
-        {
-            "symbol":"ISUZY"
-        },
-        {
-            "symbol":"ITOCY"
         },
         {
             "symbol":"ITUB"
@@ -1300,15 +859,6 @@
             "symbol":"IWS"
         },
         {
-            "symbol":"IX"
-        },
-        {
-            "symbol":"JAPAY"
-        },
-        {
-            "symbol":"JAPSY"
-        },
-        {
             "symbol":"JBHT"
         },
         {
@@ -1318,25 +868,16 @@
             "symbol":"JKHY"
         },
         {
-            "symbol":"JMHLY"
-        },
-        {
             "symbol":"JNJ"
         },
         {
             "symbol":"JPM"
         },
         {
-            "symbol":"JSHLY"
-        },
-        {
             "symbol":"K"
         },
         {
             "symbol":"KB"
-        },
-        {
-            "symbol":"KBCSY"
         },
         {
             "symbol":"KEP"
@@ -1348,28 +889,16 @@
             "symbol":"KHC"
         },
         {
-            "symbol":"KHNGY"
-        },
-        {
             "symbol":"KKR"
         },
         {
             "symbol":"KLAC"
         },
         {
-            "symbol":"KLBAY"
-        },
-        {
             "symbol":"KMB"
         },
         {
             "symbol":"KMI"
-        },
-        {
-            "symbol":"KMTUY"
-        },
-        {
-            "symbol":"KNBWY"
         },
         {
             "symbol":"KO"
@@ -1381,19 +910,10 @@
             "symbol":"KR"
         },
         {
-            "symbol":"KRYAY"
-        },
-        {
             "symbol":"KSS"
         },
         {
             "symbol":"KSU"
-        },
-        {
-            "symbol":"KUBTY"
-        },
-        {
-            "symbol":"KYOCY"
         },
         {
             "symbol":"L"
@@ -1412,9 +932,6 @@
         },
         {
             "symbol":"LFC"
-        },
-        {
-            "symbol":"LGGNY"
         },
         {
             "symbol":"LLL"
@@ -1438,19 +955,7 @@
             "symbol":"LRCX"
         },
         {
-            "symbol":"LRLCY"
-        },
-        {
-            "symbol":"LUKOY"
-        },
-        {
             "symbol":"LUV"
-        },
-        {
-            "symbol":"LUXTY"
-        },
-        {
-            "symbol":"LVMUY"
         },
         {
             "symbol":"LVS"
@@ -1465,9 +970,6 @@
             "symbol":"LYG"
         },
         {
-            "symbol":"LZAGY"
-        },
-        {
             "symbol":"M"
         },
         {
@@ -1478,9 +980,6 @@
         },
         {
             "symbol":"MAR"
-        },
-        {
-            "symbol":"MARUY"
         },
         {
             "symbol":"MAS"
@@ -1522,19 +1021,10 @@
             "symbol":"MGA"
         },
         {
-            "symbol":"MGDDY"
-        },
-        {
             "symbol":"MGM"
         },
         {
-            "symbol":"MITEY"
-        },
-        {
             "symbol":"MKC"
-        },
-        {
-            "symbol":"MKTAY"
         },
         {
             "symbol":"MLCO"
@@ -1555,16 +1045,10 @@
             "symbol":"MO"
         },
         {
-            "symbol":"MONDY"
-        },
-        {
             "symbol":"MPC"
         },
         {
             "symbol":"MPLX"
-        },
-        {
-            "symbol":"MRAAY"
         },
         {
             "symbol":"MRK"
@@ -1577,12 +1061,6 @@
         },
         {
             "symbol":"MS"
-        },
-        {
-            "symbol":"MSADY"
-        },
-        {
-            "symbol":"MSBHY"
         },
         {
             "symbol":"MSCI"
@@ -1600,43 +1078,19 @@
             "symbol":"MTB"
         },
         {
-            "symbol":"MTLHY"
-        },
-        {
             "symbol":"MTN"
-        },
-        {
-            "symbol":"MTNOY"
-        },
-        {
-            "symbol":"MTUAY"
         },
         {
             "symbol":"MUFG"
         },
         {
-            "symbol":"MURGY"
-        },
-        {
             "symbol":"MXIM"
-        },
-        {
-            "symbol":"NABZY"
         },
         {
             "symbol":"NBL"
         },
         {
-            "symbol":"NCMGY"
-        },
-        {
             "symbol":"NDAQ"
-        },
-        {
-            "symbol":"NDEKY"
-        },
-        {
-            "symbol":"NDVLY"
         },
         {
             "symbol":"NEE"
@@ -1648,28 +1102,13 @@
             "symbol":"NGG"
         },
         {
-            "symbol":"NGLOY"
-        },
-        {
-            "symbol":"NILSY"
-        },
-        {
-            "symbol":"NJDCY"
-        },
-        {
             "symbol":"NKE"
         },
         {
             "symbol":"NLY"
         },
         {
-            "symbol":"NMHLY"
-        },
-        {
             "symbol":"NMR"
-        },
-        {
-            "symbol":"NNGRY"
         },
         {
             "symbol":"NOC"
@@ -1681,46 +1120,16 @@
             "symbol":"NOV"
         },
         {
-            "symbol":"NPSNY"
-        },
-        {
-            "symbol":"NRBAY"
-        },
-        {
-            "symbol":"NRILY"
-        },
-        {
-            "symbol":"NSANY"
-        },
-        {
             "symbol":"NSC"
-        },
-        {
-            "symbol":"NSRGY"
-        },
-        {
-            "symbol":"NSSMY"
         },
         {
             "symbol":"NTAP"
         },
         {
-            "symbol":"NTDOY"
-        },
-        {
-            "symbol":"NTDTY"
-        },
-        {
             "symbol":"NTES"
         },
         {
-            "symbol":"NTIOF"
-        },
-        {
             "symbol":"NTRS"
-        },
-        {
-            "symbol":"NTTYY"
         },
         {
             "symbol":"NUE"
@@ -1735,28 +1144,16 @@
             "symbol":"NVS"
         },
         {
-            "symbol":"NVZMY"
-        },
-        {
             "symbol":"NWL"
         },
         {
-            "symbol":"NXGPY"
-        },
-        {
             "symbol":"O"
-        },
-        {
-            "symbol":"OCPNY"
         },
         {
             "symbol":"ODFL"
         },
         {
             "symbol":"OKE"
-        },
-        {
-            "symbol":"OLCLY"
         },
         {
             "symbol":"OMC"
@@ -1769,9 +1166,6 @@
         },
         {
             "symbol":"OTEX"
-        },
-        {
-            "symbol":"OVCHY"
         },
         {
             "symbol":"OXY"
@@ -1796,9 +1190,6 @@
         },
         {
             "symbol":"PCG"
-        },
-        {
-            "symbol":"PDRDY"
         },
         {
             "symbol":"PEG"
@@ -1843,19 +1234,10 @@
             "symbol":"PNC"
         },
         {
-            "symbol":"PNGAY"
-        },
-        {
-            "symbol":"PPERY"
-        },
-        {
             "symbol":"PPG"
         },
         {
             "symbol":"PPL"
-        },
-        {
-            "symbol":"PPRUY"
         },
         {
             "symbol":"PRGO"
@@ -1867,19 +1249,10 @@
             "symbol":"PSA"
         },
         {
-            "symbol":"PSMMY"
-        },
-        {
             "symbol":"PSX"
         },
         {
             "symbol":"PTR"
-        },
-        {
-            "symbol":"PUBGY"
-        },
-        {
-            "symbol":"PUGOY"
         },
         {
             "symbol":"PUK"
@@ -1903,31 +1276,16 @@
             "symbol":"QSR"
         },
         {
-            "symbol":"RAIFY"
-        },
-        {
-            "symbol":"RANJY"
-        },
-        {
-            "symbol":"RBGLY"
-        },
-        {
             "symbol":"RCI"
         },
         {
             "symbol":"RCL"
         },
         {
-            "symbol":"RDEIY"
-        },
-        {
             "symbol":"RDS.A"
         },
         {
             "symbol":"RDS.B"
-        },
-        {
-            "symbol":"RDSMY"
         },
         {
             "symbol":"REG"
@@ -1939,13 +1297,7 @@
             "symbol":"RENX"
         },
         {
-            "symbol":"REPYY"
-        },
-        {
             "symbol":"RF"
-        },
-        {
-            "symbol":"RHHBY"
         },
         {
             "symbol":"RIO"
@@ -1954,16 +1306,10 @@
             "symbol":"RJF"
         },
         {
-            "symbol":"RKUNY"
-        },
-        {
             "symbol":"RL"
         },
         {
             "symbol":"RMD"
-        },
-        {
-            "symbol":"RNLSY"
         },
         {
             "symbol":"ROK"
@@ -1987,16 +1333,7 @@
             "symbol":"RTN"
         },
         {
-            "symbol":"RWEOY"
-        },
-        {
             "symbol":"RY"
-        },
-        {
-            "symbol":"RYCEY"
-        },
-        {
-            "symbol":"SAFRY"
         },
         {
             "symbol":"SAN"
@@ -2005,58 +1342,19 @@
             "symbol":"SAP"
         },
         {
-            "symbol":"SAXPY"
-        },
-        {
-            "symbol":"SBGSY"
-        },
-        {
             "symbol":"SBUX"
         },
         {
             "symbol":"SCCO"
         },
         {
-            "symbol":"SCGLY"
-        },
-        {
             "symbol":"SCHW"
-        },
-        {
-            "symbol":"SCHYY"
-        },
-        {
-            "symbol":"SCMWY"
-        },
-        {
-            "symbol":"SDVKY"
-        },
-        {
-            "symbol":"SDXAY"
         },
         {
             "symbol":"SDY"
         },
         {
-            "symbol":"SEOAY"
-        },
-        {
             "symbol":"SEP"
-        },
-        {
-            "symbol":"SFTBY"
-        },
-        {
-            "symbol":"SGAPY"
-        },
-        {
-            "symbol":"SGSOY"
-        },
-        {
-            "symbol":"SGTZY"
-        },
-        {
-            "symbol":"SHECY"
         },
         {
             "symbol":"SHG"
@@ -2074,16 +1372,10 @@
             "symbol":"SHY"
         },
         {
-            "symbol":"SIEGY"
-        },
-        {
             "symbol":"SIRI"
         },
         {
             "symbol":"SJM"
-        },
-        {
-            "symbol":"SKHSY"
         },
         {
             "symbol":"SKM"
@@ -2095,22 +1387,7 @@
             "symbol":"SLF"
         },
         {
-            "symbol":"SLFPY"
-        },
-        {
-            "symbol":"SMCAY"
-        },
-        {
             "symbol":"SMFG"
-        },
-        {
-            "symbol":"SMNNY"
-        },
-        {
-            "symbol":"SMPNY"
-        },
-        {
-            "symbol":"SNLAY"
         },
         {
             "symbol":"SNN"
@@ -2123,15 +1400,6 @@
         },
         {
             "symbol":"SO"
-        },
-        {
-            "symbol":"SOMLY"
-        },
-        {
-            "symbol":"SONVY"
-        },
-        {
-            "symbol":"SOUHY"
         },
         {
             "symbol":"SPG"
@@ -2149,25 +1417,10 @@
             "symbol":"SRE"
         },
         {
-            "symbol":"SSDOY"
-        },
-        {
-            "symbol":"SSEZY"
-        },
-        {
             "symbol":"SSL"
         },
         {
-            "symbol":"SSMXY"
-        },
-        {
             "symbol":"SSNC"
-        },
-        {
-            "symbol":"SSREY"
-        },
-        {
-            "symbol":"SSUMY"
         },
         {
             "symbol":"STI"
@@ -2194,18 +1447,6 @@
             "symbol":"SU"
         },
         {
-            "symbol":"SUHJY"
-        },
-        {
-            "symbol":"SVNDY"
-        },
-        {
-            "symbol":"SWDBY"
-        },
-        {
-            "symbol":"SWGAY"
-        },
-        {
             "symbol":"SWK"
         },
         {
@@ -2224,19 +1465,10 @@
             "symbol":"SYY"
         },
         {
-            "symbol":"SZKMY"
-        },
-        {
             "symbol":"T"
         },
         {
-            "symbol":"T.TRI"
-        },
-        {
             "symbol":"TAP"
-        },
-        {
-            "symbol":"TCEHY"
         },
         {
             "symbol":"TD"
@@ -2249,15 +1481,6 @@
         },
         {
             "symbol":"TEL"
-        },
-        {
-            "symbol":"TELNY"
-        },
-        {
-            "symbol":"TEVA"
-        },
-        {
-            "symbol":"TEZNY"
         },
         {
             "symbol":"TFX"
@@ -2275,34 +1498,13 @@
             "symbol":"TJX"
         },
         {
-            "symbol":"TKAMY"
-        },
-        {
-            "symbol":"TKOMY"
-        },
-        {
-            "symbol":"TKPYY"
-        },
-        {
             "symbol":"TLK"
-        },
-        {
-            "symbol":"TLSNY"
-        },
-        {
-            "symbol":"TLSYY"
         },
         {
             "symbol":"TM"
         },
         {
             "symbol":"TMO"
-        },
-        {
-            "symbol":"TNABY"
-        },
-        {
-            "symbol":"TOELY"
         },
         {
             "symbol":"TOT"
@@ -2326,16 +1528,7 @@
             "symbol":"TRU"
         },
         {
-            "symbol":"TRUMY"
-        },
-        {
             "symbol":"TRV"
-        },
-        {
-            "symbol":"TRYIY"
-        },
-        {
-            "symbol":"TSCDY"
         },
         {
             "symbol":"TSM"
@@ -2347,25 +1540,13 @@
             "symbol":"TSS"
         },
         {
-            "symbol":"TTDKY"
-        },
-        {
-            "symbol":"TTNDY"
-        },
-        {
             "symbol":"TU"
-        },
-        {
-            "symbol":"TUIFY"
         },
         {
             "symbol":"TXN"
         },
         {
             "symbol":"TXT"
-        },
-        {
-            "symbol":"UBS"
         },
         {
             "symbol":"UHS"
@@ -2380,16 +1561,7 @@
             "symbol":"UNH"
         },
         {
-            "symbol":"UNICY"
-        },
-        {
             "symbol":"UNP"
-        },
-        {
-            "symbol":"UOVEY"
-        },
-        {
-            "symbol":"UPMKY"
         },
         {
             "symbol":"UPS"
@@ -2407,9 +1579,6 @@
             "symbol":"VALE"
         },
         {
-            "symbol":"VCISY"
-        },
-        {
             "symbol":"VFC"
         },
         {
@@ -2419,22 +1588,7 @@
             "symbol":"VIAB"
         },
         {
-            "symbol":"VIV"
-        },
-        {
-            "symbol":"VIVHY"
-        },
-        {
-            "symbol":"VLEEY"
-        },
-        {
-            "symbol":"VLKAY"
-        },
-        {
             "symbol":"VLO"
-        },
-        {
-            "symbol":"VLVLY"
         },
         {
             "symbol":"VMC"
@@ -2449,16 +1603,10 @@
             "symbol":"VOD"
         },
         {
-            "symbol":"VONOY"
-        },
-        {
             "symbol":"VTI"
         },
         {
             "symbol":"VTR"
-        },
-        {
-            "symbol":"VWDRY"
         },
         {
             "symbol":"VWO"
@@ -2485,9 +1633,6 @@
             "symbol":"WEC"
         },
         {
-            "symbol":"WEICY"
-        },
-        {
             "symbol":"WELL"
         },
         {
@@ -2498,9 +1643,6 @@
         },
         {
             "symbol":"WIT"
-        },
-        {
-            "symbol":"WJRYY"
         },
         {
             "symbol":"WLK"
@@ -2515,34 +1657,13 @@
             "symbol":"WMB"
         },
         {
-            "symbol":"WMMVY"
-        },
-        {
             "symbol":"WMT"
-        },
-        {
-            "symbol":"WNGRF"
-        },
-        {
-            "symbol":"WOPEY"
         },
         {
             "symbol":"WPP"
         },
         {
-            "symbol":"WPZ"
-        },
-        {
             "symbol":"WRK"
-        },
-        {
-            "symbol":"WRTBY"
-        },
-        {
-            "symbol":"WTKWY"
-        },
-        {
-            "symbol":"WWNTY"
         },
         {
             "symbol":"WY"
@@ -2566,9 +1687,6 @@
             "symbol":"XLY"
         },
         {
-            "symbol":"XNGSY"
-        },
-        {
             "symbol":"XOM"
         },
         {
@@ -2576,9 +1694,6 @@
         },
         {
             "symbol":"XYL"
-        },
-        {
-            "symbol":"YAHOY"
         },
         {
             "symbol":"YUM"
@@ -2594,9 +1709,6 @@
         },
         {
             "symbol":"ZTS"
-        },
-        {
-            "symbol":"ZURVY"
         }
     ],
     "vanguard_canada": [

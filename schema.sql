@@ -1,4 +1,4 @@
-create table Dividend(
+create table if not exists Dividend(
     symbol text primary key not null,
     amount real not null,
     ex_date text not null,
@@ -6,7 +6,7 @@ create table Dividend(
     currency text not null
 );
 
-create table User(
+create table if not exists User(
     email text primary key,
     auth_key text not null
 );

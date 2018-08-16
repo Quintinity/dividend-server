@@ -4,6 +4,7 @@ import moment from "moment";
 import { Dividend } from "./dividend";
 import { Constants } from "./constants";
 import { sprintf } from "sprintf-js";
+import { resolve } from "url";
 
 export class DividendDatabase {
     private _db : sqlite3.Database;
@@ -16,14 +17,12 @@ export class DividendDatabase {
     }
 
     async isInitialized() : Promise<boolean> {
-        let promise = new Promise<boolean>((resolve, reject) => {
+        return new Promise<boolean>((resolve, reject) => {
             this._db.get("select count(*) from sqlite_master where type='table'", (err, row) => {
                 if (err) throw err;
                 resolve(row["count(*)"] != 0);
             });
         });
-
-        return promise;
     }
 
     async runSqlScript(script : string) : Promise<void> {
@@ -46,32 +45,46 @@ export class DividendDatabase {
         });
     }
 
-    async setLatestDividend(dividend : Dividend) : Promise<void> {
+    async setLatestDividend(dividend : Dividend) : Promise<boolean> {
         const current = await this.getLatestDividend(dividend.symbol);
+
+        if (!dividend.exDate.isValid()) {
+            throw new Error(dividend.symbol + " has an invalid ex date!");
+        }
+
+        if (!dividend.paymentDate.isValid()) {
+            throw new Error(dividend.symbol + " has an invalid payment date!");
+        }
+
         if (current != null) {
-            if (dividend.exDate.isBefore(current.exDate)) {
+            if (current.equals(dividend)) {
+                return Promise.resolve(false);
+            }
+
+            if (dividend.exDate.startOf("day").isBefore(current.exDate.startOf("day"))) {
                 throw new Error(sprintf(
                     "Given ex date (%s) if before current ex date (%s) for %s", 
                     dividend.exDate.format(Constants.DATE_FORMAT),
-                    current.paymentDate.format(Constants.DATE_FORMAT),
+                    current.exDate.format(Constants.DATE_FORMAT),
                     dividend.symbol));
             }
-            if (dividend.paymentDate.isBefore(current.paymentDate)) {
+
+            if (dividend.paymentDate.startOf("day").isBefore(current.paymentDate.startOf("day"))) {
                 throw new Error(sprintf(
                     "Given payment date (%s) if before current payment date (%s) for %s", 
-                    dividend.exDate.format(Constants.DATE_FORMAT),
+                    dividend.paymentDate.format(Constants.DATE_FORMAT),
                     current.paymentDate.format(Constants.DATE_FORMAT),
                     dividend.symbol)); 
             }
         }
 
-        return new Promise<void>((resolve, reject) => {
+        return new Promise<boolean>((resolve, reject) => {
             this._db.run(
                 "replace into Dividend(symbol, amount, ex_date, payment_date, currency) values(?, ?, ?, ?, ?)", 
                 [dividend.symbol, dividend.amount, dividend.exDate.format(Constants.DATE_FORMAT), dividend.paymentDate.format(Constants.DATE_FORMAT), dividend.currency],
                 (err) => {
-                    if (err) throw err;
-                    resolve();
+                    if (err) return reject(new Error(err.message));
+                    return resolve(true);
                 }
             );
         });
@@ -80,12 +93,15 @@ export class DividendDatabase {
     async getLatestDividend(symbol : string) : Promise<Dividend> {
         return new Promise<Dividend>((resolve, reject) => {
             this._db.get("select symbol, amount, ex_date, payment_date, currency from Dividend where symbol = ?", symbol, (err, row) => {
-                if (err) throw err;
-                if (row == undefined) {
-                    resolve(null)
-                    return;   
-                };
-                resolve(new Dividend(symbol, row.amount, moment(row.ex_date, Constants.DATE_FORMAT), moment(row.payment_date, Constants.DATE_FORMAT), row.currency));
+                if (err) return reject((new Error(err.message)));
+                if (row == undefined) return resolve(null)  
+                
+                return resolve(new Dividend(
+                    symbol, 
+                    row.amount, 
+                    moment(row.ex_date, Constants.DATE_FORMAT).utc().startOf("day"),
+                    moment(row.payment_date, Constants.DATE_FORMAT).utc().startOf("day"), 
+                    row.currency));
             });
         });
     }

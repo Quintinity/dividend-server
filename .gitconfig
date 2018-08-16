@@ -1,0 +1,8 @@
+[user]
+    name = Quintinity
+    email = vlad.marica1@gmail.com
+    username = Quintinity
+
+[core]
+    eol = lf
+    core.autocrlf = input

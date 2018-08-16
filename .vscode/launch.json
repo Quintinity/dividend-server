@@ -12,8 +12,7 @@
             "args": ["--timeout", "999999", "--colors", "-r", "ts-node/register", "test/**/*.test.ts"],
             "cwd": "${workspaceRoot}",
             "protocol": "inspector",
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen"
+            "console": "internalConsole",
         },
         {
             "name": "Run",

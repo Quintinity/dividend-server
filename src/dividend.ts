@@ -20,6 +20,14 @@ class Dividend {
     get exDate(): Moment { return this._exDate; }
     get paymentDate(): Moment { return this._paymentDate; }
     get currency() : string { return this._currency };
+
+    equals(other : Dividend) : boolean {
+        return this.symbol == other.symbol
+            && this.amount == other.amount
+            && this.exDate.isSame(other.exDate) 
+            && this.paymentDate.isSame(other.paymentDate) 
+            && this.currency == other.currency;
+    }
 };
 
 interface DividendQuery {

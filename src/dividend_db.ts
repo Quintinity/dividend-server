@@ -1,10 +1,10 @@
 import sqlite3 from "sqlite3";
 import path from "path";
 import moment from "moment";
+import crypto from "crypto";
 import { Dividend } from "./dividend";
 import { Constants } from "./constants";
 import { sprintf } from "sprintf-js";
-import { resolve } from "url";
 
 export class DividendDatabase {
     private _db : sqlite3.Database;
@@ -103,6 +103,25 @@ export class DividendDatabase {
                     moment(row.payment_date, Constants.DATE_FORMAT).utc().startOf("day"), 
                     row.currency));
             });
+        });
+    }
+
+    async generateApiKey(user : string) : Promise<string> {
+        return new Promise<string>((resolve, reject) => {
+            const key = crypto.randomBytes(128).toString("base64");
+            this._db.run("insert into User(id, auth_key) values(?, ?)", [user, key], (err) => {
+                if (err) return reject(new Error("Failed to generate API key for " + user + ": " + err.message));
+                return resolve(key);
+            });
+        });
+    }
+
+    async validateApiKey(key : string) : Promise<boolean> {
+        return new Promise<boolean>((resolve, reject) => {
+            this._db.get("select count(*) from User where auth_key = ?", key, (err, row) => {
+                if (err) return reject(new Error("Failed to validate API key: " + err.message));
+                return resolve(row["count(*)"] > 0);
+            })
         });
     }
 

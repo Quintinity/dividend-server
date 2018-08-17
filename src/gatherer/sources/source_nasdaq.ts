@@ -4,6 +4,7 @@ import axios from "axios";
 import cheerio from "cheerio";
 import { sprintf } from "sprintf-js";
 import moment from "moment";
+import { getRandomUserAgent } from "../useragents";
 
 export class SourceNasdaq extends Source {
     getUrl(): string {
@@ -18,7 +19,7 @@ export class SourceNasdaq extends Source {
         const formattedUrl = sprintf(this.getUrl(), query);
         const data: string = (await axios.get(formattedUrl, {
             headers: {
-                "User-Agent": "Wget/1.14 (mingw32)",
+                "User-Agent": getRandomUserAgent(),
                 "Accept": "*/*"
             }
         })).data as string;

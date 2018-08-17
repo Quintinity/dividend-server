@@ -15,12 +15,12 @@ describe("test sources", () => {
     });
 
     it("nasdaq", async () => {
-        const dividend = await new SourceNasdaq().findLatestDividend({ symbol: "msft", source: "nasdaq" });
+        const dividend = await new SourceNasdaq().findLatestDividend({ symbol: "aapl", source: "nasdaq" });
         expect(dividend.symbol).to.eq("msft");
         expect(dividend.amount).to.be.greaterThan(0);
         expect(dividend.paymentDate.isAfter(moment("06-14-2018", Constants.DATE_FORMAT))).to.be.true;
         expect(dividend.exDate.isAfter(moment("05-16-2018", Constants.DATE_FORMAT))).to.be.true;;
-    });
+    }).timeout(0);
 
     it("vanguard canada", async () => {
         const dividend = await new SourceVanguardCanada().findLatestDividend({ symbol: "vfv", source: "vanguard_canada", identifier: "9563" });

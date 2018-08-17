@@ -44,5 +44,10 @@ describe("test database", () => {
         expect(newDividend.equals(await db.getLatestDividend(newDividend.symbol))).to.be.true;
     });
 
+    it("auth keys", async () => {
+        const key = await db.generateApiKey("hello");
+        expect(await db.validateApiKey(key)).to.be.true;
+        expect(await db.validateApiKey("abcd")).to.be.false;
+    });
 });
  

@@ -7,6 +7,6 @@ create table if not exists Dividend(
 );
 
 create table if not exists User(
-    email text primary key,
+    id text primary key not null,
     auth_key text not null
 );

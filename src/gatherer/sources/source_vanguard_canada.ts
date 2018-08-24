@@ -22,7 +22,8 @@ export class SourceVanguardCanada extends Source {
         const amount = row["distributionAmount"] as number;
         const exDate = moment(row["exDividendDate"]).utc().startOf("day");
         const paymentDate = moment(row["payableDate"]).utc().startOf("day");
+        const lastUpdateDate = moment().utc().startOf("day");
 
-        return new Dividend(query.symbol, amount, exDate, paymentDate, this.getCurrency());
+        return new Dividend(query.symbol, amount, exDate, paymentDate, this.getCurrency(), lastUpdateDate);
     }
 };

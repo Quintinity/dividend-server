@@ -3,7 +3,8 @@ create table if not exists Dividend(
     amount real not null,
     ex_date text not null,
     payment_date text not null,
-    currency text not null
+    currency text not null,
+    last_update_date text not null
 );
 
 create table if not exists User(

@@ -2,13 +2,14 @@ import express from "express";
 import schedule from "node-schedule";
 import fs from "fs";
 import path from "path";
+import moment from "moment";
 import { spawn } from "child_process";
-import { getnextdividend_router } from "./app/getnextdividend";
 import { DividendDatabase } from "./dividend_db";
 
 const app = express();
 const port = parseInt(process.env.PORT) || 8080;
 const db = new DividendDatabase();
+const sourceMap = JSON.parse(fs.readFileSync(path.join(process.cwd(), "stocks.json"), "UTF-8"));
 
 function runDividendGatherer(): void {
     const gatherer = spawn("node", [path.join(process.cwd(), "dist/src/gatherer/gatherer.js")]);
@@ -26,7 +27,23 @@ function runDividendGatherer(): void {
     });
 }
 
-app.use(getnextdividend_router);
+app.get("/getlatestdividend/:symbol", async (req, res) => {
+    const symbol = req.params.symbol;
+
+    try {
+        const today = moment().utc().startOf('day');
+        let dividend = await db.getLatestDividend(symbol.toUpperCase());
+        if (dividend == null) {
+            res.status(404).send({ error: "Symbol not supported" });
+            return;
+        }
+        res.status(200).send(dividend.toJson());
+    }
+    catch (err) {
+        res.status(500).send({ error: "An error occurred" });
+    }
+});
+
 app.listen(port, async () => {
     console.log("Started dividend server on port " + port);
 
@@ -36,6 +53,5 @@ app.listen(port, async () => {
         console.log("Dividends database initialized!");
     }
 
-    runDividendGatherer();
-    // schedule.scheduleJob({ hour: parseInt(process.env.HOUR) || 0, minute: 0 }, runDividendGatherer);
+    schedule.scheduleJob({ hour: parseInt(process.env.HOUR) || 0, minute: 0 }, runDividendGatherer);
 });

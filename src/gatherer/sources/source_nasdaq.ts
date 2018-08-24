@@ -4,7 +4,6 @@ import axios from "axios";
 import cheerio from "cheerio";
 import { sprintf } from "sprintf-js";
 import moment from "moment";
-import { getRandomUserAgent } from "../useragents";
 
 export class SourceNasdaq extends Source {
     getUrl(): string {
@@ -19,7 +18,7 @@ export class SourceNasdaq extends Source {
         const formattedUrl = sprintf(this.getUrl(), query);
         const data: string = (await axios.get(formattedUrl, {
             headers: {
-                "User-Agent": getRandomUserAgent(),
+                "User-Agent": "curl/7.47.0",
                 "Accept": "*/*"
             }
         })).data as string;
@@ -29,7 +28,8 @@ export class SourceNasdaq extends Source {
         const exDate = moment(row.find("td").eq(0).text(), "YYYYMMDD").utc().startOf("day");
         const paymentDate = moment(row.find("td").eq(4).text(), "YYYYMMDD").utc().startOf("day");
         const amount = parseFloat(row.find("td").eq(1).text());
+        const lastUpdateDate = moment().utc().startOf("day");
 
-        return new Dividend(query.symbol, amount, exDate, paymentDate, this.getCurrency());
+        return new Dividend(query.symbol, amount, exDate, paymentDate, this.getCurrency(), lastUpdateDate);
     }
 };

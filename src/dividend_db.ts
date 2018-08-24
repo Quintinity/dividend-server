@@ -58,6 +58,16 @@ export class DividendDatabase {
 
         if (current != null) {
             if (current.equals(dividend)) {
+                if (current.lastUpdateDate.isAfter(dividend.lastUpdateDate)) {
+                    return new Promise<boolean>((resolve, reject) => {
+                        this._db.run("update Dividend set last_update_date = ? where symbol = ?", 
+                            [dividend.lastUpdateDate.format(Constants.DATE_FORMAT), dividend.symbol], 
+                            err => {
+                                if (err) return reject(new Error(err.message));
+                                return resolve(false); // We updated only the last update time, nothing else changed
+                        });
+                    });
+                }
                 return Promise.resolve(false);
             }
 
@@ -80,8 +90,8 @@ export class DividendDatabase {
 
         return new Promise<boolean>((resolve, reject) => {
             this._db.run(
-                "replace into Dividend(symbol, amount, ex_date, payment_date, currency) values(?, ?, ?, ?, ?)", 
-                [dividend.symbol, dividend.amount, dividend.exDate.format(Constants.DATE_FORMAT), dividend.paymentDate.format(Constants.DATE_FORMAT), dividend.currency],
+                "replace into Dividend(symbol, amount, ex_date, payment_date, currency, last_update_date) values(?, ?, ?, ?, ?, ?)", 
+                [dividend.symbol, dividend.amount, dividend.exDate.format(Constants.DATE_FORMAT), dividend.paymentDate.format(Constants.DATE_FORMAT), dividend.currency, dividend.lastUpdateDate.format(Constants.DATE_FORMAT)],
                 (err) => {
                     if (err) return reject(new Error(err.message));
                     return resolve(true);
@@ -92,7 +102,7 @@ export class DividendDatabase {
 
     async getLatestDividend(symbol : string) : Promise<Dividend> {
         return new Promise<Dividend>((resolve, reject) => {
-            this._db.get("select symbol, amount, ex_date, payment_date, currency from Dividend where symbol = ?", symbol, (err, row) => {
+            this._db.get("select symbol, amount, ex_date, payment_date, currency, last_update_date from Dividend where symbol = ?", symbol, (err, row) => {
                 if (err) return reject((new Error(err.message)));
                 if (row == undefined) return resolve(null)  
                 
@@ -101,7 +111,8 @@ export class DividendDatabase {
                     row.amount, 
                     moment(row.ex_date, Constants.DATE_FORMAT).utc().startOf("day"),
                     moment(row.payment_date, Constants.DATE_FORMAT).utc().startOf("day"), 
-                    row.currency));
+                    row.currency,
+                    moment(row.last_update_date, Constants.DATE_FORMAT).utc().startOf("day")));
             });
         });
     }

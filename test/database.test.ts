@@ -9,7 +9,7 @@ import chai, { expect } from "chai";
 import { fail } from "assert";
 
 describe("test database", () => {
-    const db = new DividendDatabase(true);
+    const db = new DividendDatabase();
     const currentDate = moment().utc().startOf("day");
     const origDividend = new Dividend("msft", 1, currentDate, currentDate, "USD", currentDate.subtract(1, "day"));
 

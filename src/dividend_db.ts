@@ -9,11 +9,13 @@ import { sprintf } from "sprintf-js";
 export class DividendDatabase {
     private _db : sqlite3.Database;
     
-    constructor(in_memory = false) {
-        if (in_memory)
+    constructor();
+    constructor(dbPath : string);
+    constructor(dbPath? : string) {
+        if (dbPath == undefined)
             this._db = new sqlite3.Database(":memory:");
         else
-            this._db = new sqlite3.Database(path.join(process.cwd(), "dividends.db"));
+            this._db = new sqlite3.Database(dbPath);
     }
 
     async isInitialized() : Promise<boolean> {

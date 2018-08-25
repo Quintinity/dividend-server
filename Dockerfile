@@ -6,4 +6,6 @@ COPY . ./
 EXPOSE 8080
 
 RUN npm install
+RUN npm run build-ts
+
 CMD ["npm", "start"]

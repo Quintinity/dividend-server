@@ -1,8 +1,9 @@
 import fs from "fs";
 import path from "path";
 import moment from "moment";
+import { Constants } from "../constants";
 import { getSource } from "./sources/sources";
-import { Dividend, DividendQuery } from "../dividend";
+import { DividendQuery } from "../dividend";
 import { DividendDatabase } from "../dividend_db";
 
 async function sleep(delayMs : number) : Promise<void> {
@@ -14,7 +15,7 @@ async function sleep(delayMs : number) : Promise<void> {
 (async () => {
     console.log("Running dividend gatherer process!");
     const stocksJson = JSON.parse(fs.readFileSync(path.join(process.cwd(), "stocks.json"), "UTF-8"));
-    const db = new DividendDatabase();
+    const db = new DividendDatabase(process.env.DIVIDEND_DB_PATH || Constants.DEFAULT_DIVIDEND_DB_PATH);
     for (const sourceName in stocksJson) {
         let numNewDividends = 0;
         const startTime = moment();

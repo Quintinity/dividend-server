@@ -5,11 +5,11 @@ import path from "path";
 import moment from "moment";
 import { spawn } from "child_process";
 import { DividendDatabase } from "./dividend_db";
+import { Constants } from "./constants"
 
 const app = express();
 const port = parseInt(process.env.PORT) || 8080;
-const db = new DividendDatabase();
-const sourceMap = JSON.parse(fs.readFileSync(path.join(process.cwd(), "stocks.json"), "UTF-8"));
+const db = new DividendDatabase(process.env.DIVIDEND_DB_PATH || Constants.DEFAULT_DIVIDEND_DB_PATH);
 
 function runDividendGatherer(): void {
     const gatherer = spawn("node", [path.join(process.cwd(), "dist/src/gatherer/gatherer.js")]);
